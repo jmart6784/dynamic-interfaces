@@ -132,6 +132,8 @@ table {
 $gray: rgb(46, 46, 46);
 $blue: rgb(0, 113, 121);
 $light-blue: rgb(0, 146, 156);
+$bby-blue: rgb(0, 131, 148);
+$bby-blue-light: rgb(0, 164, 185);
 
 body {
   background-color: $gray;
@@ -150,6 +152,7 @@ div,
 span,
 input {
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -205,8 +208,6 @@ input {
 }
 
 .drop-item {
-  display: inline-block;
-  text-decoration: none;
   margin-bottom: 25px;
   background-color: $blue;
   border: 0px;
@@ -220,4 +221,35 @@ input {
 
 .drop-item:hover {
   background-color: $light-blue;
+}
+
+// Photo slider
+#photo-div {
+  border: 1px solid blue;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+
+.slide {
+  display: none;
+}
+
+// Photo slider controls
+#photo-controls {
+  border: 1px solid green;
+  margin-top: 50px;
+}
+
+.ctrl-btn {
+  background-color: $bby-blue;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.ctrl-btn:hover {
+  background-color: $bby-blue-light;
 }
