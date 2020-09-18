@@ -152,7 +152,6 @@ input {
 }
 
 #container {
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -233,7 +232,6 @@ input {
 }
 
 #photo-div {
-  border: 1px solid blue;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -248,19 +246,64 @@ input {
 }
 
 #photo-controls {
-  border: 1px solid green;
   margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#previous {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#next {
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .ctrl-btn {
   background-color: #008394;
   border-radius: 5px;
   border: 0px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 100;
+  padding: 0 10px 0 10px;
 }
 
 .ctrl-btn:hover {
   background-color: #00a4b9;
+}
+
+#p-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px 0 10px;
+}
+
+.dots-div {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.dots-div:hover {
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */

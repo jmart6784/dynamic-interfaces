@@ -156,7 +156,6 @@ input {
 }
 
 #container {
-  border: 1px solid red;
   display: grid;
   justify-items: center;
 }
@@ -225,7 +224,6 @@ input {
 
 // Photo slider
 #photo-div {
-  border: 1px solid blue;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -238,18 +236,49 @@ input {
 
 // Photo slider controls
 #photo-controls {
-  border: 1px solid green;
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#previous {
+  justify-self: end;
+}
+
+#next {
+  justify-self: start;
 }
 
 .ctrl-btn {
   background-color: $bby-blue;
   border-radius: 5px;
   border: 0px;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 100;
+  padding: 0 10px 0 10px;
 }
 
 .ctrl-btn:hover {
   background-color: $bby-blue-light;
+}
+
+#p-div {
+  display: flex;
+  column-gap: 10px;
+  align-content: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+
+.dots-div {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 15px;
+  height: fit-content;
+}
+
+.dots-div:hover {
+  background-color: white;
 }
